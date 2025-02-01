@@ -1,0 +1,134 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    color: #333;
+}
+
+nav {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s ease-in-out;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline;
+    color: #ffe082;
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+    font-size: 36px;
+    color: #6a11cb;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.edu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.edu-card {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #6a11cb;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    animation: fadeInUp 0.8s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edu-header h3 {
+    font-size: 20px;
+    color: #2575fc;
+    margin: 0;
+}
+
+.edu-institute {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+p, .edu-institute{
+    margin: 10px;
+}
+
+.year {
+    font-size: 14px;
+    color: #6a11cb;
+    font-weight: bold;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .edu-card {
+        text-align: center;
+    }
+
+    .edu-header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}

@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    color: #333;
+}
+
+.container {
+    flex-grow: 1; 
+}
+
+nav {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s ease-in-out;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline;
+    color: #ffe082;
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+    font-size: 32px;
+    color: #6a11cb;
+    text-align: center;
+}
+
+.skill {
+    margin: 20px 0;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    width: 0;
+    animation: fillBar 1.5s forwards ease-in-out;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress-width);
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+.primary-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
