@@ -1,0 +1,331 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    color: #333;
+}
+
+nav {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffe082;
+    transform: scale(1.1);
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: white;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 300;
+    animation: fadeIn 1.2s ease-in-out 0.2s;
+}
+
+.container {
+    max-width: 900px;
+    margin: 120px auto 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 1s ease-in-out;
+    overflow: hidden;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #6a11cb;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #6a11cb;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section p, ul {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+}
+
+ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: '•'; 
+    position: absolute;
+    left: 0;
+    color: #6a11cb; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.primary-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.secondary-btn {
+    background: #f4f4f4;
+    color: #6a11cb;
+    border: 2px solid #6a11cb;
+}
+
+.secondary-btn:hover {
+    background: #6a11cb;
+    color: white;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 500px) {
+    #chat-container {
+        width: 90%;
+        right: 5%;
+        bottom: 10px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background: #333;
+    color: white;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+}
+
+nav {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s ease-in-out;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline;
+    color: #ffe082;
+    transform: scale(1.1);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    position: relative;
+    background: url('./assets/bg_image.webp') center/cover no-repeat;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background: white;
+    color: #2575fc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+}
+
+
+.content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    margin-top: 50px;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
